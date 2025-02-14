@@ -1,8 +1,8 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { useReactToPrint } from 'react-to-print';
 import { Download, Loader2 } from 'lucide-react';
-import { Resume } from './components/Resume';
-import { ResumeData } from './types/resume';
+import { ResumeTight } from "jt-resume-builder";
+import { ResumeData } from "jt-resume-builder";
 
 function App() {
   const [resumeData, setResumeData] = useState<ResumeData | null>(null);
@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     const loadResumeData = async () => {
       try {
-        const response = await fetch('/resume-data.json');
+        const response = await fetch('resume-data.json');
         if (!response.ok) {
           throw new Error('Failed to load resume data');
         }
@@ -92,7 +92,7 @@ function App() {
             Download PDF
           </button>
         </div>
-        <Resume ref={componentRef} data={resumeData} />
+        <ResumeTight ref={componentRef} data={resumeData} />
       </div>
     </div>
   );
