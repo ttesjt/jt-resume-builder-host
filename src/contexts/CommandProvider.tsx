@@ -64,21 +64,21 @@ export const CommandProvider: React.FC<{ children: React.ReactNode }> = ({ child
       }
     };
 
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.code === "Space") {
-        window.postMessage({
-          command: "updateResumeData",
-          role: "Full Stack Developer",
-        }, "*");
-      }
-    };
+    // const handleKeyDown = (event: KeyboardEvent) => {
+    //   if (event.code === "Space") {
+    //     window.postMessage({
+    //       command: "updateResumeData",
+    //       role: "Full Stack Developer",
+    //     }, "*");
+    //   }
+    // };
 
-    window.addEventListener("keydown", handleKeyDown);
+    // window.addEventListener("keydown", handleKeyDown);
     window.addEventListener("message", handleMessage);
 
     return () => {
       window.removeEventListener("message", handleMessage);
-      window.removeEventListener("keydown", handleKeyDown);
+      // window.removeEventListener("keydown", handleKeyDown);
     };
   }, []);
 
