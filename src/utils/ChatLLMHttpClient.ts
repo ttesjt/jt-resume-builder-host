@@ -65,6 +65,7 @@ class ResumeRefineLLMHttpClient {
       }
       const resumeRefineData = data.resumeData;
       const newResumeData: ResumeData = { ...resumeData };
+      newResumeData.title = resumeRefineData.title;
       newResumeData.skills = resumeRefineData.skills;
       newResumeData.summary.description = resumeRefineData.summary;
       newResumeData.experience["sub-sections"] = resumeRefineData.experience;

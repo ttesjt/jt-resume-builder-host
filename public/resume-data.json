@@ -1,48 +1,73 @@
 {
-  "name": "John Doe",
-  "title": "Senior Software Engineer",
+  "name": "Weiyan Tao",
+  "title": "Full Stack Developer",
   "contact": {
-    "email": "john.doe@example.com",
-    "phone": "(555) 123-4567",
-    "location": "San Francisco, CA",
-    "linkedin": "linkedin.com/in/johndoe",
-    "github": "github.com/johndoe"
+    "email": "ttesjt@gmail.com",
+    "phone": "(831) 239-4191",
+    "location": "San Jose, CA",
+    "linkedin": "linkedin.com/in/yourprofile",
+    "github": "https://github.com/ttesjt"
   },
   "skills": [
     {
+      "category": "General Skills",
+      "items": [
+        "Full Stack Development",
+        "Software & Mobile App Development",
+        "UI & UX Design",
+        "Game Development",
+        "Cloud & Backend Engineering",
+        "Scalable Framework Engineering",
+        "Prompt Engineering & Fine-tuning",
+        "Vector Store Integration",
+        "Rapid Prototyping"
+      ]
+    },
+    {
       "category": "Programming Languages",
       "items": [
+        "Dart",
         "JavaScript",
         "TypeScript",
         "Python",
-        "Java",
-        "SQL"
+        "C#"
       ]
     },
     {
       "category": "Frameworks & Libraries",
       "items": [
-        "React",
+        "React.js",
+        "Flutter",
+        "Unity Engine",
         "Node.js",
-        "Express",
-        "Next.js",
-        "Django"
+        "Express"
       ]
     },
     {
-      "category": "Cloud Technologies",
+      "category": "Cloud & Tools",
       "items": [
-        "AWS",
-        "Azure",
-        "Google Cloud",
+        "Google Cloud (Firestore, Cloud Run)",
+        "AWS (Lambda, S3)",
         "Docker",
-        "Kubernetes"
+        "Firebase",
+        "Adobe Illustrator / Figma",
+        "Git / Linux CLI"
+      ]
+    },
+    {
+      "category": "Art & Design",
+      "items": [
+        "Paper & Digital Drawing",
+        "Adobe Illustrator",
+        "Blender 3D Modeling",
+        "Shader Development",
+        "Figma"
       ]
     }
   ],
   "summary": {
     "title": "Summary",
-    "description": "Experienced software engineer with over 8 years of expertise in full-stack development, specializing in React, Node.js, and cloud technologies. Proven track record of delivering scalable solutions and leading high-performing teams.",
+    "description": "Full Stack Developer with expertise in React, Flutter, and backend architecture on Google Cloud and AWS. Skilled in creating scalable web and mobile applications with a strong focus on UI/UX and optimal user engagement. Proficient in rapid prototyping, game development workflows, and prompt engineering for LLM-based solutions.",
     "sub-sections": []
   },
   "experience": {
@@ -50,40 +75,75 @@
     "description": "",
     "sub-sections": [
       {
-        "title": "Tech Solutions Inc.",
-        "description": "Senior Software Engineer",
-        "date": "2020 - Present",
+        "title": "Let’s Be Critic",
+        "description": "Solo Full-Stack Developer",
+        "date": "",
         "details": [
-          "Led development of microservices architecture serving 1M+ users",
-          "Mentored junior developers and conducted code reviews",
-          "Implemented CI/CD pipelines reducing deployment time by 60%"
+          "Implemented an LLM-powered search trigger analyzing user input and past results, cutting unnecessary queries by 70%",
+          "Developed a Firestore-based tracking & scheduler system to automate conversation summaries, reducing backend costs nearly tenfold",
+          "Leveraged a dual-LLM approach (APIs, vector stores, Cloud Run) for complaint data processing at minimal operational cost"
         ]
       },
       {
-        "title": "Innovation Labs",
-        "description": "Software Engineer",
-        "date": "2016 - 2020",
+        "title": "DrawAll",
+        "description": "Solo Developer",
+        "date": "",
         "details": [
-          "Developed and maintained React-based web applications",
-          "Optimized database queries improving performance by 40%",
-          "Collaborated with UX team to implement responsive designs"
+          "Built a grid-based, coordinate-query lazy-load system, reducing average board load time by 300% and enabling infinite-length boards",
+          "Created the 'Paper' layering framework, cutting ~5,000 lines of code and powering features like media cards, posts, and buttons",
+          "Architected end-to-end data flow using Firestore and Google Cloud Storage for multiple features (Posts, Media Cards, Board Configs)"
+        ]
+      },
+      {
+        "title": "Hero’s Clock",
+        "description": "Solo Flutter Developer",
+        "date": "",
+        "details": [
+          "Developed a Flutter-based timer and challenge app, boosting daily productivity by an estimated 50–70%",
+          "Implemented a page-view UI and 'cached last page' mechanic, reducing essential click steps from 3 to 1",
+          "Created custom vector assets using Adobe Illustrator to enhance visual appeal and user engagement"
+        ]
+      },
+      {
+        "title": "Hello World",
+        "description": "Programmer, Designer, and Artist (Team of 3)",
+        "date": "",
+        "details": [
+          "Co-developed a 'togo quest' system cutting Google Maps API usage by 500% via SQL caching and distance checks",
+          "Oversaw UI and app flow design for 3 main features and 8 distinct screens",
+          "Implemented a Node.js backend on Google Cloud Run to efficiently handle LLM requests"
         ]
       }
     ]
   },
   "education": {
-    "title": "Education",
+    "title": "Education & Academic Experience",
     "description": "",
     "sub-sections": [
       {
-        "title": "University of California, Berkeley",
-        "description": "Master of Science in Computer Science",
-        "date": "2014 - 2016"
+        "title": "University of California, Santa Cruz",
+        "description": "Computational Media MS in Game & Playable Media (Candidate)",
+        "date": ""
       },
       {
-        "title": "Stanford University",
-        "description": "Bachelor of Science in Computer Engineering",
-        "date": "2010 - 2014"
+        "title": "University of California, Santa Cruz",
+        "description": "Bachelor of Science in Computer Science (Frontend Development Focus)",
+        "date": ""
+      },
+      {
+        "title": "Hackathon: Branch Manager",
+        "description": "Won first place in a school-hosted cross-department contest (Fall 2023) by developing a sustainability-themed Unity idle-game within 48 hours",
+        "date": ""
+      },
+      {
+        "title": "Breeze Capstone Campaign",
+        "description": "Led and managed a team of 3 to prototype Breeze for the MS in Game & Playable Media capstone project",
+        "date": ""
+      },
+      {
+        "title": "Playtest Night Participant",
+        "description": "Showcased Drawall.world and Breeze at two public school-hosted events with 30+ industry testers each",
+        "date": ""
       }
     ]
   }
