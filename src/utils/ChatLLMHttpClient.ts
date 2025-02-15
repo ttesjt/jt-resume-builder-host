@@ -10,7 +10,7 @@ interface PostOptions {
 }
 
 class ResumeRefineLLMHttpClient {
-  static resumeRefineUrl = "http://localhost:8082";
+  static resumeRefineUrl = "https://resume-builder-542512881947.us-central1.run.app";
   baseUrl: string;
 
   constructor(baseUrl: string) {
