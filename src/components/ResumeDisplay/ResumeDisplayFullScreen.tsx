@@ -14,11 +14,34 @@ function ResumeDisplayFullScreen() {
 
   useEffect(() => {
     events.onPrintRequest["print"] = handlePrint;
+    const handlePageReady = () => {
+      window.postMessage({
+        command: "set-resume-status",
+        isPageReadySignal: true,
+      }, "*");
+    };
 
+    handlePageReady();
     return () => {
       delete events.onPrintRequest["print"];
     };
   }, []);
+
+  useEffect(() => {
+    const handleResumeReady = () => {
+      if (componentRef.current) {
+        const { height } = componentRef.current.getBoundingClientRect();
+        window.postMessage({
+          command: "set-resume-status",
+          isResumeDisplayReadySignal: true,
+          displayHeight: height,
+        }, "*");
+      } else {
+        console.log("componentRef.current is null");
+      }
+    };
+    handleResumeReady();
+  }, [resumeData, loading]);
 
   const handlePrint = useReactToPrint({
     content: () => componentRef.current,
