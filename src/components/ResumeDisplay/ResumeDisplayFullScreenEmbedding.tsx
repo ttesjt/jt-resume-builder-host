@@ -7,7 +7,7 @@ import { ResumeTight } from "jt-resume-builder";
 import { useCommand } from "../../contexts/CommandProvider";
 import { useResume } from '../../contexts/ResumeProvider';
 
-function ResumeDisplayFullScreen() {
+function ResumeDisplayFullScreenEmbedding() {
   const { resumeData, loading, error } = useResume();
   const { events } = useCommand();
   const componentRef = useRef<HTMLDivElement>(null);
@@ -63,7 +63,7 @@ function ResumeDisplayFullScreen() {
 
   if (loading) {
     return (
-      <div className="min-vh-100 bg-light d-flex align-items-center justify-content-center">
+      <div className="bg-light d-flex align-items-center justify-content-center">
         <div className="text-center">
           <Loader2 className="animate-spin mb-2" size={32} />
           <p className="text-secondary">Loading resume...</p>
@@ -74,7 +74,7 @@ function ResumeDisplayFullScreen() {
 
   if (error) {
     return (
-      <div className="min-vh-100 bg-light d-flex align-items-center justify-content-center">
+      <div className="bg-light d-flex align-items-center justify-content-center">
         <div className="text-center">
           <div className="alert alert-danger" role="alert">
             {error}
@@ -95,10 +95,20 @@ function ResumeDisplayFullScreen() {
   }
 
   return (
-    <div className="min-vh-100 bg-light">
-      <ResumeTight ref={componentRef} data={resumeData} fullScreen={true} />
-    </div>
+    <>
+      <style>
+        {`
+          html, body {
+            margin: 0;
+            overflow: hidden;
+          }
+        `}
+      </style>
+      <div className="bg-light" style={{ overflow: 'hidden' }}>
+        <ResumeTight ref={componentRef} data={resumeData} fullScreen={true} />
+      </div>
+    </>
   );
 }
 
-export default ResumeDisplayFullScreen;
+export default ResumeDisplayFullScreenEmbedding;
