@@ -9,11 +9,11 @@ import { ResumeProvider } from "./contexts/ResumeProvider";
 
 function App() {
   return (
-    <ResumeProvider>
-      <CommandProvider>
+    <CommandProvider>
+      <ResumeProvider>
         <ResumeDisplayFullScreenEmbedding />
-      </CommandProvider>
-    </ResumeProvider>
+      </ResumeProvider>
+    </CommandProvider>
   );
 }
 

@@ -1,9 +1,11 @@
 import React, { createContext, useContext, useEffect, useState, ReactNode } from "react";
-import { ResumeData } from "jt-resume-builder";
+import { ResumeData, ResumeOptions } from "jt-resume-builder";
+import { useCommand } from "./CommandProvider";
+import ResumeRefineLLMHttpClient from "../utils/ChatLLMHttpClient";
 
 // Define the context type
 interface ResumeContextType {
-  fullResumeData: ResumeData | null;
+  fullResumeOptions: ResumeOptions | null;
   resumeData: ResumeData | null;
   setResumeData: (data: ResumeData | null) => void;
   loading: boolean;
@@ -21,7 +23,8 @@ interface ResumeProviderProps {
 }
 
 export const ResumeProvider: React.FC<ResumeProviderProps> = ({ children }) => {
-  const [fullResumeData, _] = useState<ResumeData | null>(null);
+  const { events } = useCommand();
+  const [fullResumeOptions, setFullResumeOptions] = useState<ResumeOptions | null>(null);
   const [resumeData, setResumeData] = useState<ResumeData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -29,6 +32,13 @@ export const ResumeProvider: React.FC<ResumeProviderProps> = ({ children }) => {
   useEffect(() => {
     const loadResumeData = async () => {
       try {
+        const responseOptions = await fetch('resume-options.json');
+        if (!responseOptions.ok) {
+          throw new Error('Failed to load resume options');
+        }
+        const options = await responseOptions.json();
+        setFullResumeOptions(options);
+
         const response = await fetch('resume-data.json');
         if (!response.ok) {
           throw new Error('Failed to load resume data');
@@ -41,13 +51,38 @@ export const ResumeProvider: React.FC<ResumeProviderProps> = ({ children }) => {
         setLoading(false);
       }
     };
-
     loadResumeData();
   }, []);
 
+  useEffect(() => {
+    const refineResumeData = async (data: any) => {
+      console.log("Calling refineResumeData <==========");
+      if (!resumeData || !fullResumeOptions) {
+        console.error("resumeData or fullResumeOptions is null", resumeData, fullResumeOptions);
+        return;
+      }
+      const resumeRefineHttpClient: ResumeRefineLLMHttpClient = new ResumeRefineLLMHttpClient(ResumeRefineLLMHttpClient.resumeRefineUrl);
+      console.log("about to post to resume-refine");
+      const newResumeData = await resumeRefineHttpClient.post({
+        endpoint: "resume-refine",
+        resumeData: resumeData!,
+        resumeOptions: fullResumeOptions!,
+        role: data.role,
+        additionalText: data.additionalText,
+      });
+      console.log("newResumeData: ", newResumeData);
+      setResumeData(newResumeData);
+    }
+    events.onResumeDataUpdateRequest["refine-resume"] = refineResumeData;
+
+    return () => {
+      delete events.onResumeDataUpdateRequest["refine-resume"];
+    };
+  }, [resumeData, fullResumeOptions]);
+
   return (
     <ResumeContext.Provider value={{
-      fullResumeData,
+      fullResumeOptions,
       resumeData,
       setResumeData,
       loading,

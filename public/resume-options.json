@@ -1,0 +1,59 @@
+{
+  "summaries": [
+    "Experienced software engineer with over 8 years of expertise in full-stack development, specializing in React, Node.js, and cloud technologies. Proven track record of delivering scalable solutions and leading high-performing teams."
+  ],
+  "skills": [
+    {
+      "category": "Programming Languages",
+      "items": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java",
+        "SQL"
+      ]
+    },
+    {
+      "category": "Frameworks & Libraries",
+      "items": [
+        "React",
+        "Node.js",
+        "Express",
+        "Next.js",
+        "Django"
+      ]
+    },
+    {
+      "category": "Cloud Technologies",
+      "items": [
+        "AWS",
+        "Azure",
+        "Google Cloud",
+        "Docker",
+        "Kubernetes"
+      ]
+    }
+  ],
+  "experiences": [
+    {
+      "title": "Tech Solutions Inc.",
+      "description": "Senior Software Engineer",
+      "date": "2020 - Present",
+      "details": [
+        "Led development of microservices architecture serving 1M+ users",
+        "Mentored junior developers and conducted code reviews",
+        "Implemented CI/CD pipelines reducing deployment time by 60%"
+      ]
+    },
+    {
+      "title": "Innovation Labs",
+      "description": "Software Engineer",
+      "date": "2016 - 2020",
+      "details": [
+        "Developed and maintained React-based web applications",
+        "Optimized database queries improving performance by 40%",
+        "Collaborated with UX team to implement responsive designs"
+      ]
+    }
+  ]
+}

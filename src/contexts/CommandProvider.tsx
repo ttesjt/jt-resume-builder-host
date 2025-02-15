@@ -4,12 +4,12 @@ import React, { createContext, useContext, useEffect } from "react";
 // Define types for events and commands
 interface Events {
   onResumeDataChange: Record<string, () => void>;
-  onResumeDataUpdateRequest: Record<string, () => void>;
+  onResumeDataUpdateRequest: Record<string, (data: any) => void>;
   onPrintRequest: Record<string, () => void>;
 }
 
 interface Commands {
-  updateResumeData: () => void;
+  updateResumeData: (data: any) => void;
   printResume: () => void;
 }
 
@@ -33,10 +33,10 @@ export const CommandProvider: React.FC<{ children: React.ReactNode }> = ({ child
   };
 
   const commands: Commands = {
-    updateResumeData: () => {
+    updateResumeData: (data: any) => {
       console.log("Calling updateResumeData");
       for (const key in events.onResumeDataUpdateRequest) {
-        events.onResumeDataUpdateRequest[key]();
+        events.onResumeDataUpdateRequest[key](data);
       }
     },
     printResume: () => {
@@ -55,7 +55,7 @@ export const CommandProvider: React.FC<{ children: React.ReactNode }> = ({ child
 
       if (event.data?.command === "updateResumeData") {
         // Call every function in onResumeDataUpdateRequest
-        commands.updateResumeData();
+        commands.updateResumeData(event.data);
       }
 
       if (event.data?.command === "printResume") {
@@ -64,18 +64,21 @@ export const CommandProvider: React.FC<{ children: React.ReactNode }> = ({ child
       }
     };
 
-    // const handleKeyDown = (event: KeyboardEvent) => {
-    //   if (event.code === "Space") {
-    //     window.postMessage({ command: "printResume" }, "*");
-    //   }
-    // };
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.code === "Space") {
+        window.postMessage({
+          command: "updateResumeData",
+          role: "Full Stack Developer",
+        }, "*");
+      }
+    };
 
-    // window.addEventListener("keydown", handleKeyDown);
+    window.addEventListener("keydown", handleKeyDown);
     window.addEventListener("message", handleMessage);
 
     return () => {
       window.removeEventListener("message", handleMessage);
-      // window.removeEventListener("keydown", handleKeyDown);
+      window.removeEventListener("keydown", handleKeyDown);
     };
   }, []);
 
