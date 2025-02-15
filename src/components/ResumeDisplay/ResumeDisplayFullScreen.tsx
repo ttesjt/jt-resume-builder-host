@@ -15,7 +15,7 @@ function ResumeDisplayFullScreen() {
   useEffect(() => {
     events.onPrintRequest["print"] = handlePrint;
     const handlePageReady = () => {
-      window.postMessage({
+      window.parent.postMessage({
         command: "set-resume-status",
         isPageReadySignal: true,
       }, "*");
@@ -31,7 +31,7 @@ function ResumeDisplayFullScreen() {
     const handleResumeReady = () => {
       if (componentRef.current) {
         const { height } = componentRef.current.getBoundingClientRect();
-        window.postMessage({
+        window.parent.postMessage({
           command: "set-resume-status",
           isResumeDisplayReadySignal: true,
           displayHeight: height,
