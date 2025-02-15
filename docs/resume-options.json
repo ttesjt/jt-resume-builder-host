@@ -1,0 +1,183 @@
+{
+  "summaries": [
+    "Full Stack Developer with expertise in React, Flutter, and backend architecture on Google Cloud and AWS. Skilled in building scalable web and mobile applications with a strong focus on UI/UX, and seamless front-end and back-end integration for a smooth user experience.",
+    "Full Stack Developer specializing in backend architecture and LLM applications. Built RESTful APIs with AWS Lambda and GCS Cloud Run. Designed prompts to optimize LLMs for chatbots and utility processors. Experienced in React and Flutter for seamless frontend integration.",
+    "Game Developer with expertise in Unity 2D/3D, Blender modeling, and multi-engine development. Specializes in gamified UI/UX design, fast prototyping, and scalable architecture. Experienced in mobile game development and integrating game engines with traditional mobile app frameworks.",
+    "Game Developer specializing in technical design, scalable architecture, and multi-engine development. Experienced in Unity 2D/3D, Blender modeling, and building structured, maintainable game systems. Skilled in fast prototyping and designing frameworks that support long-term scalability and adaptability."
+  ],
+  "titleOptions": [
+    "Full Stack Developer",
+    "Software Engineer",
+    "Cloud Computing Engineer",
+    "UI & UX Designer",
+    "Language Model Engineer",
+    "Game Developer",
+    "Flutter Developer",
+    "Artist"
+  ],
+  "skills": [
+    {
+      "category": "Programming Languages",
+      "items": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "C & C++",
+        "C#",
+        "Dart",
+        "SQL"
+      ]
+    },
+    {
+      "category": "Frameworks & Libraries",
+      "items": [
+        "Flutter",
+        "React.js",
+        "Unity",
+        "Node.js",
+        "Express",
+        "Unity Engine"
+      ]
+    },
+    {
+      "category": "Cloud & DevOps",
+      "items": [
+        "Google Cloud (Cloud Run, App Engine)",
+        "AWS (Lambda, S3)",
+        "Firebase",
+        "Docker",
+        "CI/CD (e.g., GitHub Actions, Jenkins)"
+      ]
+    },
+    {
+      "category": "Databases & Data Management",
+      "items": [
+        "Firestore",
+        "SQL (MySQL, PostgreSQL)",
+        "NoSQL (MongoDB)",
+        "Vector Databases",
+        "Cloud Storage (e.g., AWS S3, GCS)"
+      ]
+    },
+    {
+      "category": "LLM & AI",
+      "items": [
+        "Prompt Engineering",
+        "Restful API Creation",
+        "Response Post-processing",
+        "Vector Store",
+        "Fine-tuning",
+        "ML Model Integration"
+      ]
+    },
+    {
+      "category": "UI/UX & Design Tools",
+      "items": [
+        "Adobe Illustrator",
+        "Figma",
+        "Paper & Digital Drawing",
+        "Blender (3D Modeling)",
+        "Shader Development"
+      ]
+    },
+    {
+      "category": "Game Development & Prototyping",
+      "items": [
+        "Unity (2D & 3D)",
+        "Blender",
+        "Unreal",
+        "Godot",
+        "C, C++, and C#",
+        "Asset Optimization",
+        "Rapid Prototyping",
+        "Shader Graph / Custom Shaders"
+      ]
+    },
+    {
+      "category": "General & Tools",
+      "items": [
+        "Git",
+        "Linux CLI",
+        "Agile / Scrum",
+        "Testing & Debugging",
+        "REST & GraphQL APIs"
+      ]
+    }
+  ],
+  "experiences": [
+    {
+      "title": "Let’s Be Critic",
+      "description": "Solo Full-Stack Developer",
+      "date": "",
+      "details": [
+        "Implemented an LLM-powered search trigger that analyzes user input and past results prior to vector queries, cutting unnecessary searches by 70% with no performance loss",
+        "Designed a Firestore-based tracking and scheduler system to automate conversation summarization and storage, slashing backend costs nearly tenfold",
+        "Developed a dual-LLM approach leveraging APIs, vector stores, and Cloud Run to process and store complaint data at minimal operational cost",
+        "Created an automated review generator fueled by user complaint logs, enhancing user engagement",
+        "Refined prompt engineering and response handling to enable seamless topic-product switching in a single chat session, improving UX"
+      ]
+    },
+    {
+      "title": "Hero’s Clock",
+      "description": "Solo Flutter Developer",
+      "date": "",
+      "details": [
+        "Built a Flutter-based time-and-challenge app that boosted users’ daily chore productivity by an estimated 50%–70%",
+        "Implemented a page-view UI and 'cached last page' mechanic, reducing click steps from three to one for key timer features",
+        "Created seven custom vector images via Adobe Illustrator, elevating the app’s visual appeal across main features and intro screens"
+      ]
+    },
+    {
+      "title": "Cardio Traveler",
+      "description": "Lead Programmer, Designer, and Artist (Team of 3)",
+      "date": "",
+      "details": [
+        "Designed and implemented 8 of 12 Flutter app screens, and solely developed the Unity scene management system with 4 main game scenes (2 currently in demo)",
+        "Migrated Unity-only prototype to a Flutter + Unity workflow, improving performance and cutting battery usage by over 5x (based on 30-player testing)",
+        "Developed a scalable localization system with complementary JSON loading, supporting 4 languages and reducing ~40% of code repetition",
+        "Engineered a top-view vegetation system using <35 vertices per tree, enabling 30 FPS rendering of over 30k trees on iPhone XR—3x more than traditional methods",
+        "Created 50+ vector art assets and a UI theme for 8 in-game cities, along with 30+ 3D models for buildings, trees, and environments"
+      ]
+    },
+    {
+      "title": "Hello World",
+      "description": "Programmer, Designer, and Artist (Team of 3)",
+      "date": "",
+      "details": [
+        "Co-designed and implemented a 'togo quest' system that cut Google Maps API usage by 500% via SQL caching and distance checks",
+        "Led UI and app-flow logic for 3 main features and 8 screens, delivering a cohesive user experience",
+        "Built a Node.js backend on Google Cloud Run to handle LLM requests, ensuring scalable interactions"
+      ]
+    },
+    {
+      "title": "DrawAll",
+      "description": "Solo Developer",
+      "date": "",
+      "details": [
+        "Introduced a grid-based, coordinate-query lazy-load mechanic that reduced average board loading time by 300% and enabled infinite-length drawing boards",
+        "Developed the 'Paper' layering system, cutting ~5,000 lines of code and serving as a foundation for features like media cards, posts, and buttons",
+        "Architected end-to-end data flow using Firestore and Google Cloud Storage for posts, media cards, board configs, and more",
+        "Implemented a complete workflow—from user accounts and lobby/board search to collaborative drawing and sharing"
+      ]
+    },
+    {
+      "title": "Kwjibo",
+      "description": "Technical Designer & Programmer (Team of 5)",
+      "date": "",
+      "details": [
+        "Developed a joystick gesture detection system supporting sequential inputs via an 8-direction checkpoint and state-machine architecture",
+        "Created a timeline event system to replace hardcoded conditions, now serving as the core engine for in-game events and combat logic"
+      ]
+    },
+    {
+      "title": "Multiversal Lover",
+      "description": "Lead Full-Stack Developer (Team of 3)",
+      "date": "",
+      "details": [
+        "Used prompt engineering to split single LLM responses into multiple shorter messages, simulating natural real-time chat",
+        "Added a browser-based inactivity timer that triggers system requests, enabling the LLM to initiate conversation prompts",
+        "Set up AWS Lambda for LLM processing and AWS S3 for conversation storage, ensuring scalable, reliable performance"
+      ]
+    }
+  ]
+}
