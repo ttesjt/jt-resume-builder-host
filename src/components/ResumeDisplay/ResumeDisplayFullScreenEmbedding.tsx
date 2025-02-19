@@ -100,7 +100,6 @@ function ResumeDisplayFullScreenEmbedding() {
         {`
           html, body {
             margin: 0;
-            overflow: hidden;
           }
         `}
       </style>

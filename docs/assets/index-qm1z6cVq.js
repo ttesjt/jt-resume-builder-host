@@ -105,7 +105,6 @@ Error generating stack: `+o.message+`
 \r
 .resume-container {\r
   max-width: 900px;\r
-  margin: 1rem auto;\r
   padding: 1rem;\r
   background-color: var(--resume-white);\r
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\r
@@ -113,6 +112,7 @@ Error generating stack: `+o.message+`
   font-family: var(--resume-font-secondary);\r
   line-height: 1.3;\r
   color: var(--resume-primary-color);\r
+  box-sizing: border-box;\r
 }\r
 \r
 .resume-container.resume-fullscreen {\r
@@ -274,6 +274,7 @@ Error generating stack: `+o.message+`
     padding: 0.75rem;\r
     box-shadow: none;\r
     max-width: none;\r
+    box-sizing: border-box;\r
   }\r
 \r
   .resume-no-print {\r
@@ -302,6 +303,5 @@ Error generating stack: `+o.message+`
     `});return t?ae.jsx("div",{className:"bg-light d-flex align-items-center justify-content-center",children:ae.jsxs("div",{className:"text-center",children:[ae.jsx(Np,{className:"animate-spin mb-2",size:32}),ae.jsx("p",{className:"text-secondary",children:"Loading resume..."})]})}):n?ae.jsx("div",{className:"bg-light d-flex align-items-center justify-content-center",children:ae.jsxs("div",{className:"text-center",children:[ae.jsx("div",{className:"alert alert-danger",role:"alert",children:n}),ae.jsx("button",{className:"btn btn-primary",onClick:()=>window.location.reload(),children:"Try Again"})]})}):e?ae.jsxs(ae.Fragment,{children:[ae.jsx("style",{children:`
           html, body {
             margin: 0;
-            overflow: hidden;
           }
         `}),ae.jsx("div",{className:"bg-light",style:{overflow:"hidden"},children:ae.jsx(Op,{ref:l,data:e,fullScreen:!0})})]}):null}function Ap(){return ae.jsx(Mp,{children:ae.jsx(Dp,{children:ae.jsx(Fp,{})})})}Ic(document.getElementById("root")).render(ae.jsx(re.StrictMode,{children:ae.jsx(Ap,{})}));
