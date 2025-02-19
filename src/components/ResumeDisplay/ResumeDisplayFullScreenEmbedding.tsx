@@ -95,18 +95,7 @@ function ResumeDisplayFullScreenEmbedding() {
   }
 
   return (
-    <>
-      <style>
-        {`
-          html, body {
-            margin: 0;
-          }
-        `}
-      </style>
-      <div className="bg-light" style={{ overflow: 'hidden' }}>
-        <ResumeTight ref={componentRef} data={resumeData} fullScreen={true} />
-      </div>
-    </>
+    <ResumeTight ref={componentRef} data={resumeData} fullScreen={true} />
   );
 }
 

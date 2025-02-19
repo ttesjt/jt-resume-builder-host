@@ -1,0 +1,73 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global scrollbar override */
+html {
+    /* Ensure the scrollbar doesn't take up layout space globally */
+    overflow: overlay;
+
+    /* Hide default scrollbar for webkit browsers */
+    &::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: #c4c4c4;
+        border-radius: 2px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: #c4c4c4;
+    }
+
+    /* For Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: #c4c4c4 transparent;
+}
+
+/* Component-specific scrollbar (in case you want different styling for components) */
+.custom-scrollbar {
+
+    /* Hide default scrollbar for webkit browsers */
+    &::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: #c4c4c4;
+        border-radius: 2px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: #c4c4c4;
+    }
+
+    /* For Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: #c4c4c4 transparent;
+}
+
+.custom-scrollbar-container {
+    /* Ensure the scrollbar doesn't take up layout space */
+    overflow: overlay;
+}
