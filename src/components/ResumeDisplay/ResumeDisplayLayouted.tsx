@@ -1,11 +1,11 @@
 import { useRef, useEffect } from 'react';
 import { useReactToPrint } from 'react-to-print';
 import { Download, Loader2 } from 'lucide-react';
-import { ResumeTight } from "jt-resume-builder";
 
 // @ts-ignore
 import { useCommand } from "../../contexts/CommandProvider";
 import { useResume } from '../../contexts/ResumeProvider';
+import { ResumePlain } from '../ResumeTemplates/ResumePlain';
 
 function ResumeDisplayLayouted() {
   const { resumeData, loading, error } = useResume();
@@ -83,7 +83,7 @@ function ResumeDisplayLayouted() {
             Download PDF
           </button>
         </div>
-        <ResumeTight ref={componentRef} data={resumeData} />
+        <ResumePlain ref={componentRef} data={resumeData} />
       </div>
     </div>
   );
