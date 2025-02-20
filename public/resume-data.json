@@ -1,5 +1,5 @@
 {
-  "name": "Weiyan Tao",
+  "name": "JT Tao",
   "title": "Full Stack Developer",
   "contact": {
     "email": "ttyy550@gmail.com",
@@ -10,58 +10,36 @@
   },
   "skills": [
     {
-      "category": "General Skills",
+      "category": "Programming & Frameworks",
       "items": [
-        "Full Stack Development",
-        "Software & Mobile App Development",
-        "UI & UX Design",
-        "Game Development",
-        "Cloud & Backend Engineering",
-        "Scalable Framework Engineering",
-        "Prompt Engineering & Fine-tuning",
-        "Vector Store Integration",
-        "Rapid Prototyping"
-      ]
-    },
-    {
-      "category": "Programming Languages",
-      "items": [
-        "Dart",
         "JavaScript",
         "TypeScript",
         "Python",
-        "C#"
-      ]
-    },
-    {
-      "category": "Frameworks & Libraries",
-      "items": [
-        "React.js",
         "Flutter",
-        "Unity Engine",
-        "Node.js",
-        "Express"
+        "React.js",
+        "C, C++, C#",
+        "Unity Engine"
       ]
     },
     {
-      "category": "Cloud & Tools",
+      "category": "Backend & Databases",
       "items": [
-        "Google Cloud (Firestore, Cloud Run)",
-        "AWS (Lambda, S3)",
-        "Docker",
+        "Node.js, Express.js",
+        "SQL (MySQL, PostgreSQL)",
+        "NoSQL (MongoDB, Firestore)",
+        "Vector Databases",
+        "RESTful APIs & GraphQL"
+      ]
+    },
+    {
+      "category": "Cloud, DevOps & Tools",
+      "items": [
+        "Google Cloud (Cloud Run, App Engine, Storage)",
+        "AWS (S3, Lambda)",
         "Firebase",
-        "Adobe Illustrator / Figma",
-        "Git / Linux CLI"
-      ]
-    },
-    {
-      "category": "Art & Design",
-      "items": [
-        "Paper & Digital Drawing",
-        "Adobe Illustrator",
-        "Blender 3D Modeling",
-        "Shader Development",
-        "Figma"
+        "Docker",
+        "CI/CD (GitHub Actions, Jenkins)",
+        "Version Control (Git, Perforce)"
       ]
     }
   ],
@@ -80,10 +58,9 @@
         "description": "Solo Full-Stack Developer",
         "date": "",
         "details": [
-          "Implemented an LLM-powered search trigger that analyzes user input and past results prior to vector queries, cutting unnecessary searches by 70% with no performance loss",
-          "Designed a Firestore-based tracking and scheduler system that automates conversation-keypoints storage to the vector store, enabling Cloud Run for the chatbot, which previously required a server to handle chat sessions",
-          "Developed an asynchronous dual-LLM workflow for the 'complaint' chat system. One channel handles the chat, one channel handles the keypoints summarization and storage. This approach reduced token usage up to 80% because of shorter context to LLM required",
-          "Refined prompt engineering and response handling to enable seamless topic-product switching in a single chat session, improving UX"
+          "Developed an LLM-driven search trigger to analyze user input and historical data prior to vector queries, reducing unnecessary searches by 70% with minimal overhead.",
+          "Architected a Firestore-based tracking and scheduling system that automates keypoint storage in a vector store, enabling Cloud Run deployment and eliminating the need for a dedicated server.",
+          "Created an asynchronous dual-LLM workflow, separating chat handling from keypoint summarization and storage, reducing token usage by up to 80% thanks to a shorter required context."
         ]
       },
       {
@@ -92,21 +69,20 @@
         "description": "Lead Programmer, Designer, and Artist (Team of 3)",
         "date": "",
         "details": [
-          "Designed and implemented 8 out of 12 Flutter app screens. Solely developed and integrated the entire 3D world scenes in Unity, including a scene management system with 4 main game scenes (2 currently in demo).",
-          "Migrated the initial Unity-only prototype to a Flutter + Unity workflow, improving performance and cutting battery usage by over 5 times (based on a playtest over 20 players)",
-          "Developed a scalable localization system with Modular JSON Loading, supporting 4 languages, and ensured a scalable item localization structure.",
-          "Engineered a top-view vegetation system using <35 vertices per tree, enabling 30 FPS rendering of over 30k trees on iPhone XR—3x more than traditional methods"
+          "Transitioned from a Unity-only prototype to a Flutter + Unity workflow, boosting performance and reducing battery usage by over five times (confirmed by a 20-player playtest).",
+          "Implemented a modular JSON-based localization system supporting four languages, ensuring a scalable approach to item localization.",
+          "Engineered a top-view vegetation system using fewer than 35 vertices per tree, achieving 30 FPS with more than 30,000 trees on an iPhone XR—triple the capacity of standard approaches."
         ]
       },
       {
         "title": "DrawAll",
         "subtitle": "A graffiti-wall inspired drawing-board social media",
-        "description": "Solo Developer",
+        "description": "Solo Full-Stack Developer",
         "date": "",
         "details": [
-          "Developed a grid-based, coordinate-query lazy-load mechanic leveraging Firestore and Google Cloud Storage that reduced average board loading time by 3 times and enabled infinite-length drawing boards",
-          "Developed a layering system and a uniformed template for all 'on-board' media and content objects and placement. Successfully cutting ~5,000 lines of code and ensured a scalable and maintainable system compared to the initial implementation",
-          "Implemented a complete workflow—from user accounts and lobby/board search to collaborative drawing and sharing experience"
+          "Engineered a 256×256 tile-based, coordinate-query lazy-loading mechanism using Firestore and Google Cloud Storage, allowing partial image updates per stroke and cutting average board load times by up to 300%, while enabling infinite board length.",
+          "Developed a ‘fence system’ to protect specific board coordinates by defining max fence lengths and section-based partitioning, limiting reads to at most 2 Firestore documents per interaction.",
+          "Built a modular layering system and unified template for all on-board media and content, cutting roughly 5,000 lines of code and ensuring a more scalable, maintainable architecture."
         ]
       },
       {
@@ -115,18 +91,18 @@
         "description": "Solo Flutter Developer",
         "date": "",
         "details": [
-          "Designed and implemented this app's workflow and visual, created 7 image assets, and developed 2 different save methods for tasks: shared_preference for caching current tasks, and SQLite for saving favorite tasks. Ran 2 user tests which resulted in one major UI revision that split features into 3 screens",
-          "Designed UI and app-flow with consideration for both mobile and web environments, and developed a screen utility system to ensure the UI looks consistent and natural on different screen sizes",
-          "Implemented a page-view UI for features and a 'cached last page' mechanic, reducing UI interaction steps from 3 to 1 for single-task-timer features"
+          "Introduced a page-view UI and a 'cached last page' mechanic, cutting user interaction steps from three to one for single-task-timer features.",
+          "Crafted a responsive UI and app-flow for both mobile and web, employing a screen utility system to maintain consistent layouts across various devices."
         ]
       },
       {
         "title": "Hello World",
+        "subtitle": "A 'Togo list' mobile app powered by LLMs",
         "description": "Programmer, Designer, and Artist (Team of 3)",
         "date": "",
         "details": [
-          "Co-developed a 'togo quest' system cutting Google Maps API usage by 500% via SQL caching and distance checks",
-          "Implemented a Node.js backend on Google Cloud Run to efficiently handle LLM requests"
+          "Engineered LLM prompts to generate daily Togo Quests and deployed a Node.js backend on Google Cloud Run, ensuring secure and scalable LLM request processing.",
+          "Architected and collaboratively optimized Google Maps API usage in the Togo Quest system, cutting calls by nearly 100% through SQLite-based location caching and efficient distance checks."
         ]
       }
     ]
