@@ -24,6 +24,7 @@ export interface ResumeData {
     phone: string;
     location: string;
     linkedin?: string;
+    website?: string;
     github?: string;
   };
   skills: Skill[];

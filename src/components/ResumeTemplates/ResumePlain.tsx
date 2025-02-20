@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import { ResumeData, Section } from './types/resume';
-import { Github, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
+import { Link, Github, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 import './resumePlain.css';
 
 const SectionHeader: React.FC<{ title: string }> = ({ title }) => (
@@ -66,17 +66,31 @@ export const ResumePlain = forwardRef<HTMLDivElement, ResumePlainProps>(({ data,
             <MapPin size={14} />
             <span>{data.contact.location}</span>
           </div>
+          {
+            data.contact.website && (
+              <div className="resume-contact-item resume-contact-link">
+                <a href={`https://${data.contact.website}`} target="_blank" rel="noopener noreferrer">
+                  <Link size={14} />
+                  <span>https://{data.contact.website}</span>
+                </a>
+              </div>
+            )
+          }
           {data.contact.linkedin && (
-            <a href={`https://${data.contact.linkedin}`} className="resume-contact-item resume-contact-link">
-              <Linkedin size={14} />
-              <span>LinkedIn</span>
-            </a>
+            <div className="resume-contact-item resume-contact-link">
+              <a href={`https://${data.contact.linkedin}`} target="_blank" rel="noopener noreferrer">
+                <Linkedin size={14} />
+                <span>https://{data.contact.linkedin}</span>
+              </a>
+            </div>
           )}
           {data.contact.github && (
-            <a href={`https://${data.contact.github}`} className="resume-contact-item resume-contact-link">
-              <Github size={14} />
-              <span>GitHub</span>
-            </a>
+            <div className="resume-contact-item resume-contact-link">
+              <a href={`https://${data.contact.github}`} target="_blank" rel="noopener noreferrer">
+                <Github size={14} />
+                <span>https://{data.contact.github}</span>
+              </a>
+            </div>
           )}
         </div>
       </div>
