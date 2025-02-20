@@ -107,61 +107,67 @@
   "experiences": [
     {
       "title": "Let’s Be Critic",
+      "subtitle": "A complaint and advisory chatbot",
       "description": "Solo Full-Stack Developer",
       "date": "",
       "details": [
         "Implemented an LLM-powered search trigger that analyzes user input and past results prior to vector queries, cutting unnecessary searches by 70% with no performance loss",
-        "Designed a Firestore-based tracking and scheduler system to automate conversation summarization and storage, slashing backend costs nearly tenfold",
-        "Developed a dual-LLM approach leveraging APIs, vector stores, and Cloud Run to process and store complaint data at minimal operational cost",
+        "Designed a Firestore-based tracking and scheduler system that automates conversation-keypoints storage to the vector store, enabling Cloud Run for the chatbot, which previously required a server to handle chat sessions",
+        "Developed an asynchronous dual-LLM workflow for the 'complaint' chat system. One channel handles the chat, one channel handles the keypoints summarization and storage. This approach reduced token usage up to 80% because of shorter context to LLM required",
         "Created an automated review generator fueled by user complaint logs, enhancing user engagement",
         "Refined prompt engineering and response handling to enable seamless topic-product switching in a single chat session, improving UX"
       ]
     },
     {
       "title": "Hero’s Clock",
+      "subtitle": "A light-weight cross-platform productivity app",
       "description": "Solo Flutter Developer",
       "date": "",
       "details": [
-        "Built a Flutter-based time-and-challenge app that boosted users’ daily chore productivity by an estimated 50%–70%",
-        "Implemented a page-view UI and 'cached last page' mechanic, reducing click steps from three to one for key timer features",
-        "Created seven custom vector images via Adobe Illustrator, elevating the app’s visual appeal across main features and intro screens"
+        "Designed and implemented this app's workflow and visual, created 7 image assets, and developed 2 different save methods for tasks: shared_preference for caching current tasks, and SQLite for saving favorite tasks. Ran 2 user tests which resulted in one major UI revision that split features into 3 screens",
+        "Designed UI and app-flow with consideration for both mobile and web environments, and developed a screen utility system to ensure the UI looks consistent and natural on different screen sizes",
+        "Implemented a page-view UI for features and a 'cached last page' mechanic, reducing UI interaction steps from 3 to 1 for single-task-timer features"
       ]
     },
     {
       "title": "Cardio Traveler",
+      "subtitle": "A mobile fitness serious game",
       "description": "Lead Programmer, Designer, and Artist (Team of 3)",
       "date": "",
       "details": [
-        "Designed and implemented 8 of 12 Flutter app screens, and solely developed the Unity scene management system with 4 main game scenes (2 currently in demo)",
-        "Migrated Unity-only prototype to a Flutter + Unity workflow, improving performance and cutting battery usage by over 5x (based on 30-player testing)",
-        "Developed a scalable localization system with complementary JSON loading, supporting 4 languages and reducing ~40% of code repetition",
+        "Designed and implemented 8 out of 12 Flutter app screens. Solely developed and integrated the entire 3D world scenes in Unity, including a scene management system with 4 main game scenes (2 currently in demo).",
+        "Migrated the initial Unity-only prototype to a Flutter + Unity workflow, improving performance and cutting battery usage by over 5 times (based on a playtest over 20 players)",
+        "Developed a scalable localization system with Modular JSON Loading, supporting 4 languages, and ensured a scalable item localization structure.",
         "Engineered a top-view vegetation system using <35 vertices per tree, enabling 30 FPS rendering of over 30k trees on iPhone XR—3x more than traditional methods",
         "Created 50+ vector art assets and a UI theme for 8 in-game cities, along with 30+ 3D models for buildings, trees, and environments"
       ]
     },
     {
       "title": "Hello World",
+      "subtitle": "A 'Togo list' mobile app powered by LLMs",
       "description": "Programmer, Designer, and Artist (Team of 3)",
       "date": "",
       "details": [
-        "Co-designed and implemented a 'togo quest' system that cut Google Maps API usage by 500% via SQL caching and distance checks",
-        "Led UI and app-flow logic for 3 main features and 8 screens, delivering a cohesive user experience",
-        "Built a Node.js backend on Google Cloud Run to handle LLM requests, ensuring scalable interactions"
+        "Designed and co-implemented a 'togo quest' system that reduced Google Maps API usage by 50% to nearly 100% through searched-location caching with SQLite and distance checks",
+        "Led UI and app-flow logic for 5 main features and 8 screens, ensuring a cohesive user experience",
+        "Built a Node.js backend on Google Cloud Run to handle LLM requests, ensuring secure and scalable LLM interactions"
       ]
     },
     {
       "title": "DrawAll",
+      "subtitle": "A graffiti-wall inspired drawing-board social media",
       "description": "Solo Developer",
       "date": "",
       "details": [
-        "Introduced a grid-based, coordinate-query lazy-load mechanic that reduced average board loading time by 300% and enabled infinite-length drawing boards",
-        "Developed the 'Paper' layering system, cutting ~5,000 lines of code and serving as a foundation for features like media cards, posts, and buttons",
+        "Developed a grid-based, coordinate-query lazy-load mechanic leveraging Firestore and Google Cloud Storage that reduced average board loading time by 3 times and enabled infinite-length drawing boards",
+        "Developed a layering system and a uniformed template for all 'on-board' media and content objects and placement. Successfully cutting ~5,000 lines of code and ensured a scalable and maintainable system compared to the initial implementation",
         "Architected end-to-end data flow using Firestore and Google Cloud Storage for posts, media cards, board configs, and more",
-        "Implemented a complete workflow—from user accounts and lobby/board search to collaborative drawing and sharing"
+        "Implemented a complete workflow—from user accounts and lobby/board search to collaborative drawing and sharing experience"
       ]
     },
     {
       "title": "Kwjibo",
+      "subtitle": "A desktop rogue-like game featuring unique joystick gestural combat",
       "description": "Technical Designer & Programmer (Team of 5)",
       "date": "",
       "details": [
@@ -171,6 +177,7 @@
     },
     {
       "title": "Multiversal Lover",
+      "subtitle": "One of the earliest ChatGpt powered dating chatbots",
       "description": "Lead Full-Stack Developer (Team of 3)",
       "date": "",
       "details": [
