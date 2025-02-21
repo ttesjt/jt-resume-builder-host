@@ -1,12 +1,12 @@
 {
-  "name": "JT Tao",
+  "name": "Weiyan Tao",
   "title": "Full Stack Developer",
   "contact": {
-    "email": "ttyy550@gmail.com",
-    "phone": "(408) 231-5832",
+    "email": "taoweiyan1998@gmail.com",
+    "phone": "(831) 239-4191",
     "location": "San Jose, CA",
-    "github": "github.com",
-    "website": "google.com"
+    "github": "github.com/ttesjt",
+    "website": "weiyantao.com"
   },
   "skills": [
     {
@@ -68,7 +68,7 @@
         "title": "Cardio Traveler",
         "subtitle": "A mobile fitness serious game",
         "description": "Lead Programmer, Designer, and Artist (Team of 3)",
-        "date": "2008 - 3893",
+        "date": "",
         "details": [
           "Transitioned from a Unity-only prototype to a Flutter + Unity workflow, boosting performance and reducing battery usage by over five times (confirmed by a 20-player playtest).",
           "Implemented a modular JSON-based localization system supporting four languages, ensuring a scalable approach to item localization.",
