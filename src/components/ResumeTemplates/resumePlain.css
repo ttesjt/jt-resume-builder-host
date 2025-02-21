@@ -177,9 +177,9 @@
   font-family: var(--resume-font-secondary);
   color: var(--resume-third-color);
   font-size: 0.75rem;
-  margin-bottom: 0.02rem;
+  margin-bottom: 0.2rem;
   position: relative;
-  line-height: 1.3;
+  line-height: 1.05;
   padding-left: 0.5rem;
 }
 
