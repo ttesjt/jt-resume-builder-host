@@ -1,11 +1,11 @@
 import { useRef, useEffect } from 'react';
 import { useReactToPrint } from 'react-to-print';
 import { Loader2 } from 'lucide-react';
-import { ResumeTight } from "jt-resume-builder";
 
 // @ts-ignore
 import { useCommand } from "../../contexts/CommandProvider";
 import { useResume } from '../../contexts/ResumeProvider';
+import { ResumePlain } from '../ResumeTemplates/ResumePlain';
 
 function ResumeDisplayFullScreenEmbedding() {
   const { resumeData, loading, error } = useResume();
@@ -41,6 +41,18 @@ function ResumeDisplayFullScreenEmbedding() {
       }
     };
     handleResumeReady();
+
+    // listen to space button, when pressed, print the resume
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === " ") {
+        handlePrint();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
   }, [resumeData, loading]);
 
   const handlePrint = useReactToPrint({
@@ -95,7 +107,7 @@ function ResumeDisplayFullScreenEmbedding() {
   }
 
   return (
-    <ResumeTight ref={componentRef} data={resumeData} fullScreen={true} />
+    <ResumePlain ref={componentRef} data={resumeData} fullScreen={true} />
   );
 }
 
