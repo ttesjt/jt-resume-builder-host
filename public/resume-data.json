@@ -17,6 +17,7 @@
         "Python",
         "Flutter",
         "React.js",
+        "Node.js",
         "C, C++, C#",
         "Unity Engine"
       ]
@@ -24,22 +25,22 @@
     {
       "category": "Backend & Databases",
       "items": [
-        "Node.js, Express.js",
-        "SQL (MySQL, PostgreSQL)",
-        "NoSQL (MongoDB, Firestore)",
+        "Express.js",
+        "SQL",
+        "NoSQL",
         "Vector Databases",
-        "RESTful APIs & GraphQL"
+        "RESTful APIs"
       ]
     },
     {
       "category": "Cloud, DevOps & Tools",
       "items": [
-        "Google Cloud (Cloud Run, App Engine, Storage)",
-        "AWS (S3, Lambda)",
+        "GCS Cloud Run and App Engine",
+        "AWS Lambda and S3",
         "Firebase",
         "Docker",
-        "CI/CD (GitHub Actions, Jenkins)",
-        "Version Control (Git, Perforce)"
+        "CI/CD",
+        "Version Control"
       ]
     }
   ],
@@ -67,16 +68,26 @@
         "title": "Cardio Traveler",
         "subtitle": "A mobile fitness serious game",
         "description": "Lead Programmer, Designer, and Artist (Team of 3)",
-        "date": "",
+        "date": "2008 - 3893",
         "details": [
           "Transitioned from a Unity-only prototype to a Flutter + Unity workflow, boosting performance and reducing battery usage by over five times (confirmed by a 20-player playtest).",
           "Implemented a modular JSON-based localization system supporting four languages, ensuring a scalable approach to item localization.",
-          "Engineered a top-view vegetation system using fewer than 35 vertices per tree, achieving 30 FPS with more than 30,000 trees on an iPhone XR—triple the capacity of standard approaches."
+          "Designed a top-view vegetation system using fewer than 35 vertices per tree, achieving 30 FPS with more than 30,000 trees on an iPhone XR—triple the capacity of standard approaches."
+        ]
+      },
+      {
+        "title": "Hello World",
+        "subtitle": "A gamified location recommendation app powered by LLMs",
+        "description": "Programmer, Designer, and Artist (Team of 3)",
+        "date": "",
+        "details": [
+          "Engineered LLM prompts to generate daily Togo Quests and deployed a Node.js backend on Google Cloud Run, ensuring secure and scalable LLM request processing.",
+          "Architected and collaboratively optimized Google Maps API usage in the Togo Quest system, cutting calls by nearly 100% through SQLite-based location caching and efficient distance checks."
         ]
       },
       {
         "title": "DrawAll",
-        "subtitle": "A graffiti-wall inspired drawing-board social media",
+        "subtitle": "A drawing-based social media",
         "description": "Solo Full-Stack Developer",
         "date": "",
         "details": [
@@ -94,16 +105,6 @@
           "Introduced a page-view UI and a 'cached last page' mechanic, cutting user interaction steps from three to one for single-task-timer features.",
           "Crafted a responsive UI and app-flow for both mobile and web, employing a screen utility system to maintain consistent layouts across various devices."
         ]
-      },
-      {
-        "title": "Hello World",
-        "subtitle": "A 'Togo list' mobile app powered by LLMs",
-        "description": "Programmer, Designer, and Artist (Team of 3)",
-        "date": "",
-        "details": [
-          "Engineered LLM prompts to generate daily Togo Quests and deployed a Node.js backend on Google Cloud Run, ensuring secure and scalable LLM request processing.",
-          "Architected and collaboratively optimized Google Maps API usage in the Togo Quest system, cutting calls by nearly 100% through SQLite-based location caching and efficient distance checks."
-        ]
       }
     ]
   },
@@ -114,27 +115,12 @@
       {
         "title": "University of California, Santa Cruz",
         "description": "Computational Media MS in Game & Playable Media (Candidate)",
-        "date": ""
+        "date": "September 2023 - March 2025"
       },
       {
         "title": "University of California, Santa Cruz",
         "description": "Bachelor of Science in Computer Science (Frontend Development Focus)",
-        "date": ""
-      },
-      {
-        "title": "Hackathon: Branch Manager",
-        "description": "Won first place in a school-hosted cross-department contest (Fall 2023) by developing a sustainability-themed Unity idle-game within 48 hours",
-        "date": ""
-      },
-      {
-        "title": "Breeze Capstone Campaign",
-        "description": "Led and managed a team of 3 to prototype Breeze for the MS in Game & Playable Media capstone project",
-        "date": ""
-      },
-      {
-        "title": "Playtest Night Participant",
-        "description": "Showcased Drawall.world and Breeze at two public school-hosted events with 30+ industry testers each",
-        "date": ""
+        "date": "September 2020 - June 2022"
       }
     ]
   }

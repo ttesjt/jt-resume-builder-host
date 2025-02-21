@@ -138,13 +138,13 @@
         "Architected the app logic flow including game system and bridging Flutter and Unity frameworks, implemented eight out of twelve main screens in the current build, and solely created and integrated the 3D world scenes in Unity, including a scene management system with four main game scenes.",
         "Transitioned from a Unity-only prototype to a Flutter + Unity workflow, boosting performance and reducing battery usage by over five times (confirmed by a 20-player playtest).",
         "Implemented a modular JSON-based localization system supporting four languages, ensuring a scalable approach to item localization.",
-        "Engineered a top-view vegetation system using fewer than 35 vertices per tree, achieving 30 FPS with more than 30,000 trees on an iPhone XR—triple the capacity of standard approaches.",
+        "Designed a top-view vegetation system using fewer than 35 vertices per tree, achieving 30 FPS with more than 30,000 trees on an iPhone XR—triple the capacity of standard approaches.",
         "Produced over 50 vector art assets and a cohesive UI theme for eight in-game cities, plus 30+ custom 3D models for buildings, trees, and environments."
       ]
     },
     {
       "title": "Hello World",
-      "subtitle": "A 'Togo list' mobile app powered by LLMs",
+      "subtitle": "A gamified location recommendation app powered by LLMs",
       "description": "Programmer, Designer, and Artist (Team of 3)",
       "date": "",
       "details": [
@@ -155,7 +155,7 @@
     },
     {
       "title": "DrawAll",
-      "subtitle": "A graffiti-wall inspired drawing-board social media",
+      "subtitle": "A drawing-based social media",
       "description": "Solo Full-Stack Developer",
       "date": "",
       "details": [

@@ -4,7 +4,8 @@ export interface Skill {
 }
 
 export interface SubSection {
-  title: string;
+  title?: string;
+  subtitle?: string;
   description: string;
   date?: string;
   details?: string[];

@@ -24,7 +24,12 @@ const SectionComponent: React.FC<{ section: Section }> = ({ section }) => (
       <div key={subIndex} className="resume-subsection">
         <div className="resume-subsection-header">
           <div>
-            <h4 className="resume-subsection-title">{subSection.title}</h4>
+            <div className="resume-subsection-title-group">
+              {subSection.title && <h4 className="resume-subsection-title">{subSection.title}</h4>}
+              {subSection.subtitle && (
+                <span className="resume-subsection-subtitle">| {subSection.subtitle}</span>
+              )}
+            </div>
             <p className="resume-subsection-description">{subSection.description}</p>
           </div>
           {subSection.date && (
