@@ -61,7 +61,7 @@
         "details": [
           "Developed an LLM-driven search trigger to analyze user input and historical data prior to vector queries, reducing unnecessary searches by 70% with minimal overhead.",
           "Architected a Firestore-based tracking and scheduling system that automates keypoint storage in a vector store, enabling Cloud Run deployment and eliminating the need for a dedicated server.",
-          "Created an asynchronous dual-LLM workflow, separating chat handling from keypoint summarization and storage, reducing token usage by up to 80% thanks to a shorter required context."
+          "Created an asynchronous dual-LLM workflow for complaint-chat, asynchronously handling chat and keypoint summarization. Reduced token usage by 80% thanks to a shorter required context, also improved response time by 30%."
         ]
       },
       {
@@ -70,7 +70,7 @@
         "description": "Lead Programmer, Designer, and Artist (Team of 3)",
         "date": "",
         "details": [
-          "Transitioned from a Unity-only prototype to a Flutter + Unity workflow, boosting performance and reducing battery usage by over five times (confirmed by a 20-player playtest).",
+          "Transitioned from a Unity-only prototype to a Flutter + Unity workflow, boosting performance and reducing battery usage by over five times.",
           "Implemented a modular JSON-based localization system supporting four languages, ensuring a scalable approach to item localization.",
           "Designed a top-view vegetation system using fewer than 35 vertices per tree, achieving 30 FPS with more than 30,000 trees on an iPhone XR—triple the capacity of standard approaches."
         ]
@@ -94,6 +94,16 @@
           "Engineered a 256×256 tile-based, coordinate-query lazy-loading mechanism using Firestore and Google Cloud Storage, allowing partial image updates per stroke and cutting average board load times by up to 300%, while enabling infinite board length.",
           "Developed a ‘fence system’ to protect specific board coordinates by defining max fence lengths and section-based partitioning, limiting reads to at most 2 Firestore documents per interaction.",
           "Built a modular layering system and unified template for all on-board media and content, cutting roughly 5,000 lines of code and ensuring a more scalable, maintainable architecture."
+        ]
+      },
+      {
+        "title": "Kwjibo",
+        "subtitle": "A Unity game featuring a unique joystick gesture system",
+        "description": "Technical Designer & Programmer (Team of 5)",
+        "date": "",
+        "details": [
+          "Implemented a joystick gesture detection system supporting sequential inputs through an eight-direction checkpoint and state-machine structure.",
+          "Built a timeline event framework replacing hardcoded logic, now serving as the foundation for in-game events and combat mechanics."
         ]
       },
       {

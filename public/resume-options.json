@@ -113,7 +113,7 @@
       "details": [
         "Developed an LLM-driven search trigger to analyze user input and historical data prior to vector queries, reducing unnecessary searches by 70% with minimal overhead.",
         "Architected a Firestore-based tracking and scheduling system that automates keypoint storage in a vector store, enabling Cloud Run deployment and eliminating the need for a dedicated server.",
-        "Created an asynchronous dual-LLM workflow, separating chat handling from keypoint summarization and storage, reducing token usage by up to 80% thanks to a shorter required context.",
+        "Created an asynchronous dual-LLM workflow for complaint-chat, asynchronously handling chat and keypoint summarization. Reduced token usage by 80% thanks to a shorter required context, also improved response time by 30%.",
         "Built an automated review generator powered by user complaint logs, boosting user engagement.",
         "Optimized prompt engineering and response handling to support seamless topic or product switching within a single chat session, enhancing the user experience."
       ]
@@ -136,7 +136,7 @@
       "date": "",
       "details": [
         "Architected the app logic flow including game system and bridging Flutter and Unity frameworks, implemented eight out of twelve main screens in the current build, and solely created and integrated the 3D world scenes in Unity, including a scene management system with four main game scenes.",
-        "Transitioned from a Unity-only prototype to a Flutter + Unity workflow, boosting performance and reducing battery usage by over five times (confirmed by a 20-player playtest).",
+        "Transitioned from a Unity-only prototype to a Flutter + Unity workflow, boosting performance and reducing battery usage by over five times.",
         "Implemented a modular JSON-based localization system supporting four languages, ensuring a scalable approach to item localization.",
         "Designed a top-view vegetation system using fewer than 35 vertices per tree, achieving 30 FPS with more than 30,000 trees on an iPhone XR—triple the capacity of standard approaches.",
         "Produced over 50 vector art assets and a cohesive UI theme for eight in-game cities, plus 30+ custom 3D models for buildings, trees, and environments."
@@ -168,7 +168,7 @@
     },
     {
       "title": "Kwjibo",
-      "subtitle": "A desktop rogue-like game featuring unique joystick gestural combat",
+      "subtitle": "A Unity game featuring a unique joystick gesture system",
       "description": "Technical Designer & Programmer (Team of 5)",
       "date": "",
       "details": [
