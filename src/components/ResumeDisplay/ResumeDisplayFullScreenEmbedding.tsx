@@ -43,16 +43,16 @@ function ResumeDisplayFullScreenEmbedding() {
     handleResumeReady();
 
     // listen to space button, when pressed, print the resume
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === " ") {
-        handlePrint();
-      }
-    };
+    // const handleKeyDown = (event: KeyboardEvent) => {
+    //   if (event.key === " ") {
+    //     handlePrint();
+    //   }
+    // };
 
-    window.addEventListener("keydown", handleKeyDown);
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-    };
+    // window.addEventListener("keydown", handleKeyDown);
+    // return () => {
+    //   window.removeEventListener("keydown", handleKeyDown);
+    // };
   }, [resumeData, loading]);
 
   const handlePrint = useReactToPrint({
